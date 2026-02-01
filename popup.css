@@ -1,0 +1,98 @@
+:root {
+  color-scheme: light;
+  font-family: "Hiragino Kaku Gothic ProN", "Meiryo", "Noto Sans JP", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 12px;
+  width: 360px;
+  background: #f7f7f5;
+  color: #222;
+}
+
+header {
+  margin-bottom: 12px;
+}
+
+h1 {
+  font-size: 16px;
+  margin: 0;
+}
+
+#empty {
+  padding: 12px;
+  background: #fff;
+  border: 1px solid #e2e2e2;
+  border-radius: 8px;
+  font-size: 13px;
+}
+
+#list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 12px;
+}
+
+.item {
+  background: #fff;
+  border: 1px solid #e2e2e2;
+  border-radius: 10px;
+  padding: 10px;
+  display: grid;
+  gap: 8px;
+}
+
+.meta {
+  display: grid;
+  gap: 4px;
+}
+
+.name {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.time {
+  font-size: 11px;
+  color: #666;
+  word-break: break-all;
+}
+
+.text {
+  margin: 0;
+  padding: 8px;
+  background: #f2f2ef;
+  border-radius: 6px;
+  font-size: 12px;
+  white-space: pre-wrap;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+}
+
+button {
+  border: 1px solid #d0d0d0;
+  background: #fafafa;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #f0f0f0;
+}
+
+button.remove {
+  border-color: #e3b6b6;
+  background: #fff5f5;
+}
+
+button.remove:hover {
+  background: #ffe9e9;
+}

@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>保存したデッキコード</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <header>
+      <h1>ESC  保存したデッキコード</h1>
+    </header>
+
+    <main>
+      <div id="empty" hidden>まだ保存されていません。</div>
+      <ul id="list"></ul>
+    </main>
+
+    <template id="item-template">
+      <li class="item">
+        <div class="meta">
+          <div class="name"></div>
+          <div class="time"></div>
+        </div>
+        <pre class="text"></pre>
+        <div class="actions">
+          <button class="copy" type="button">コピー</button>
+          <button class="open" type="button">開く</button>
+          <button class="rename" type="button">名前変更</button>
+          <button class="remove" type="button">削除</button>
+        </div>
+      </li>
+    </template>
+
+    <script src="popup.js"></script>
+  </body>
+</html>

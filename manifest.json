@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "PCG Easy Code Saver",
+  "version": "1.0.0",
+  "description": "簡単にポケカのデッキコードを名前付きで保存し、同期して使える拡張機能です。",
+  "permissions": ["contextMenus", "storage", "scripting", "activeTab", "tabs"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.pokemon-card.com/deck/result.html/deckID/*",
+        "https://www.pokemon-card.com/deck/confirm.html/deckID/*"
+      ],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "action": {
+    "default_title": "保存したデッキコードを表示",
+    "default_popup": "popup.html"
+  }
+}
